@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal de Filmes</title>
+</head>
+<body>
+    
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" id="branding">
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="logo-copy">
+                    <h1 class="site-title">Portal de Filmes Puc Minas</h1>
+                    <small class="site-description">O seu portal de Filmes</small>
+                </div>
+            </a> <!-- #branding -->
+
+            <div class="main-navigation">
+                <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                <ul class="menu">
+                    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="#">Sobre</a></li>
+                    <li class="menu-item"><a href="#">Avaliações</a></li>
+                    <li class="menu-item"><a href="#">Contato</a></li>
+                </ul> <!-- .menu -->
+
+                
+            </div> <!-- .main-navigation -->
+
+            <div class="mobile-navigation"></div>
+        </div>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+      <div class="pesquisar">
+        <form  id="form">
+            <input type="text" placeholder="Pesquisar" id="search" class="search">
+        </form>
+    </div>
+    <main id="main"></main>
+    
+    
+    <div class="pagination">
+        <div class="page" id="prev">Voltar</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Proxima Pagina</div>
+
+    </div>
+    
+    <footer class="container footer">
+        <p>Trabalho Desenvolvimento de Interfaces Web 2021 - Todos os direitos reservados </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
